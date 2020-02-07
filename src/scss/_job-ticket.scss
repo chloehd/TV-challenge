@@ -1,0 +1,85 @@
+$frisky-yellow: #f6b932;
+$sloppy-grey: #b4b4b4;
+$main-blue: #1c0a90;
+$job-title-font: "Roboto", sans-serif;
+$border-blue: #3927b1;
+
+.job-ticket {
+  border: 1px solid $border-blue;
+  padding: 2rem;
+  margin-bottom: 30px;
+
+  .avatar {
+    display: none;
+    img {
+      border-radius: $img-avatar-border-radius;
+    }
+  }
+  .job-details {
+    .job-title {
+      text-transform: capitalize;
+      font-family: $job-title-font;
+      font-weight: map-get($font-weights, bold);
+    }
+    .job-progress-bar-rail {
+      width: 50%;
+      margin: 10px 0;
+      background-color: $frisky-yellow;
+      height: 4px;
+      position: relative;
+      border-radius: 4px;
+      .job-progress-bar {
+        position: absolute;
+        border-radius: 4px;
+        left: 0;
+        background-color: $main-blue;
+        height: 6px;
+        top: -1px;
+      }
+    }
+  }
+  .job-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+
+    .job-view-more {
+      color: #5a5a5a;
+      font-size: map-get($font-sizes, p-small);
+    }
+    .job-button-login {
+      font-family: $job-title-font;
+      color: #fff;
+      background-color: $main-blue;
+      width: 150px;
+      &:hover {
+        background-color: transparent;
+        color: $main-blue;
+        border: 1px solid $main-blue;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .job-ticket {
+    display: flex;
+    justify-content: space-between;
+    .avatar {
+      display: block;
+      img {
+        border-radius: $img-avatar-border-radius;
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    .job-details {
+      width: 50%;
+      .job-progress-bar-rail {
+        width: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+
+$btn-border-radius-base: 60px;
+
+$text-color: #5a5a5a;
+$link-color: #1c0a90;
+$headings-color: #5a5a5a;
+
+$btn-primary-color: #ffffff;
+$btn-primary-bg: #3927b1;
+$btn-primary-border: #3927b1;
+
+$btn-default-color: #1c0a90;
+$btn-default-bg: #fff;
+$btn-default-border: #312298;
+
+$input-border-radius: 0;
+$input-color: #5a5a5a;
+$input-color-placeholder: #5a5a5a;
+$input-border: #fff;
+
+$img-avatar-border-radius: 50%;
+
+$font-family-base: "Roboto", sans-serif;
+$font-weights: (
+  "light": 300,
+  "regular": 400,
+  "bold": 700
+);
+$font-sizes: (
+  "h1": 1.3em,
+  "h2": 1.8em,
+  "p": 1em,
+  "p-small": 0.8em
+);
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+@import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+@import "company-profile";
+@import "job-ticket";

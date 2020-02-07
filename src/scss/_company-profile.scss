@@ -1,0 +1,131 @@
+$company-name-font: "Roboto", sans-serif;
+$company-body-label-font: "Roboto", sans-serif;
+$company-jobs-font: "Oswald", sans-serif;
+$frisky-yellow: #f6b932;
+$sloppy-grey: #b4b4b4;
+$main-blue: #1c0a90;
+
+.company-profile {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  .container {
+    padding: 0 30px;
+  }
+
+  .row {
+    margin: 0;
+  }
+  .company-header {
+    width: 100%;
+    height: 150px;
+    background-color: $main-blue;
+  }
+  .company-body {
+    display: flex;
+    flex-direction: column;
+    .left-column {
+      .company-avatar {
+        .margin-wrapper {
+          position: relative;
+          margin-top: -60px;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+
+          img {
+            border-radius: $img-avatar-border-radius;
+            width: 140px;
+            height: 140px;
+          }
+        }
+      }
+      .company-details {
+        .company-name {
+          font-family: $company-name-font;
+          color: $frisky-yellow;
+          font-weight: map-get($font-weights, bold);
+          font-size: map-get($font-sizes, h1);
+          margin: 2rem 0;
+        }
+
+        .company-socials {
+          width: 250px;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 1rem;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .company-summary {
+        margin-top: 2rem;
+        .company-summary-label {
+          color: $main-blue;
+          font-weight: map-get($font-weights, bold);
+          margin-right: 0.5rem;
+        }
+      }
+
+      .company-stack {
+        margin-top: 2rem;
+        .company-stack-label {
+          margin-bottom: 1rem;
+          color: $main-blue;
+          font-weight: map-get($font-weights, bold);
+        }
+      }
+    }
+
+    .right-column {
+      margin-top: 2rem;
+      .company-active-jobs {
+        margin: 1.5rem 0;
+        font-family: $company-jobs-font;
+        font-size: map-get($font-sizes, h2);
+        text-transform: uppercase;
+      }
+
+      .company-description {
+        font-weight: map-get($font-weights, light);
+      }
+
+      .company-body-label {
+        margin-bottom: 1rem;
+        font-family: $company-body-label-font;
+        font-weight: map-get($font-weights, bold);
+        font-size: map-get($font-sizes, h1);
+        color: $frisky-yellow;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .company-profile {
+    .company-body {
+      display: flex;
+      flex-direction: row;
+
+      .left-column {
+        .company-details {
+          .company-name {
+            margin: 1rem 0 2rem 0;
+          }
+        }
+      }
+
+      .right-column {
+        padding-left: 110px;
+        margin-top: 10rem;
+        .company-body-label {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-# theventury
+# The Ventury challenge
 
 ## Setup & launch
 

@@ -1,6 +1,20 @@
 # The Ventury challenge
 
+## Description
+
+This project is a clone of the two screenshots you can find in the src > screenshots folder.
+
+## Technologies
+
+Project is created with:
+
+- `bootstrap 3`
+
 ## Setup & launch
 
-To set up the project, install it locally using `npm install` or `yarn install` .
-To launch it in your browser, run `npm start` or `yarn start` .
+To run this project, install it locally using npm:
+
+```
+$ npm install
+$ npm start
+```
